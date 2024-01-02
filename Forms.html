@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir HTML</title>
+</head>
+
+<body>
+    <h1>Formulir Kontak</h1>
+
+    <form action="/proses-form" method="post">
+        <!-- Input teks untuk nama -->
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <br>
+
+        <!-- Input email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+
+        <!-- Input sandi -->
+        <label for="sandi">Sandi:</label>
+        <input type="password" id="sandi" name="sandi" required>
+
+        <br>
+
+        <!-- Pilihan radio -->
+        <fieldset>
+            <legend>Jenis Kelamin:</legend>
+            <input type="radio" id="pria" name="jenis-kelamin" value="pria" checked>
+            <label for="pria">Pria</label>
+
+            <input type="radio" id="wanita" name="jenis-kelamin" value="wanita">
+            <label for="wanita">Wanita</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Pilihan checkbox -->
+        <label for="newsletter">Berlangganan Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="langganan" checked>
+
+        <br>
+
+        <!-- Pilihan dropdown/select -->
+        <label for="kota">Pilih Kota:</label>
+        <select id="kota" name="kota">
+            <option value="jakarta">Jakarta</option>
+            <option value="bandung">Bandung</option>
+            <option value="surabaya">Surabaya</option>
+        </select>
+
+        <br>
+
+        <!-- Area teks untuk pesan -->
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea>
+
+        <br>
+        <!-- Upload file -->
+        <label for="upload">Unggah Berkas:</label>
+        <input type="file" id="upload" name="berkas">
+
+        <br>
+        <!-- pilih tanggal -->
+        <label for="tgl-lahir">Tanggal Lahir:</label>
+        <input type="date" id="tgl-lahir" name="tgl-lahir">
+
+        <br>
+        <!-- pilih warna -->
+        <label for="warna-favorit">Pilih Warna Favorit:</label>
+        <input type="color" id="warna-favorit" name="warna-favorit">
+
+        <br>
+        <!-- URL -->
+        <label for="url-sosmed">Profil Media Sosial (URL):</label>
+        <input type="url" id="url-sosmed" name="url-sosmed">
+
+        <br>
+        <!-- range -->
+        <label for="nilai">Pilih Nilai Anda:</label>
+        <input type="range" id="nilai" name="nilai" min="0" max="100">
+
+        <br>
+
+        <!-- Tombol kirim -->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+
+</html>
