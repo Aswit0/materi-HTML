@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Mendefinisikan karakter set dan viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul dokumen -->
+    <title>Tabel HTML</title>
+</head>
+
+<body>
+    <!-- Judul halaman -->
+    <h1>Data Mahasiswa</h1>
+
+    <!-- Tabel untuk menampilkan data mahasiswa -->
+    <table border="1">
+        <!-- Baris header tabel -->
+        <thead>
+            <tr>
+                <!-- Kolom NIM -->
+                <th>NIM</th>
+                <!-- Kolom Nama -->
+                <th>Nama</th>
+                <!-- Kolom Jurusan -->
+                <th>Jurusan</th>
+            </tr>
+        </thead>
+        <!-- Baris-baris data dalam tabel -->
+        <tbody>
+            <!-- Baris pertama -->
+            <tr>
+                <!-- Sel NIM -->
+                <td>001</td>
+                <!-- Sel Nama -->
+                <td>John Doe</td>
+                <!-- Sel Jurusan -->
+                <td>Informatika</td>
+            </tr>
+            <!-- Baris kedua -->
+            <tr>
+                <!-- Sel NIM -->
+                <td>002</td>
+                <!-- Sel Nama -->
+                <td>Jane Doe</td>
+                <!-- Sel Jurusan -->
+                <td>Sistem Informasi</td>
+            </tr>
+            <!-- Baris ketiga -->
+            <tr>
+                <!-- Sel NIM -->
+                <td rowspan="2">003</td>
+                <!-- Sel Nama -->
+                <td colspan="2">Bob Smith</td>
+            </tr>
+            <!-- Baris keempat -->
+            <tr>
+                <!-- Sel Jurusan -->
+                <td colspan="2">Teknik Elektro</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
